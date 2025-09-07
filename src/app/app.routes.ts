@@ -1,17 +1,26 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePage } from './pages/home/home.page';
+import { SobrePage } from './pages/sobre/sobre.page';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
-  },
-  {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomePage
   },
   {
     path: 'sobre',
-    loadComponent: () => import('./pages/sobre/sobre.page').then( m => m.SobrePage)
-  },
+    component: SobrePage
+  }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
