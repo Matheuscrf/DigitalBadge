@@ -1,0 +1,7 @@
+{
+  "name": "DigitalBadge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
