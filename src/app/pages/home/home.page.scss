@@ -52,6 +52,7 @@ ion-content {
   border-radius: 10px;
   width: 40vw;
   padding: 10px;
+  text-transform: none;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -74,5 +75,13 @@ ion-content {
   80%,
   100% {
     transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .custom-btn {
+    width: 85%; /* ocupa quase toda a largura */
+    font-size: 18px;
   }
 }
