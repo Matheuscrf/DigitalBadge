@@ -1,60 +1,78 @@
 ion-content {
   --background: linear-gradient(to right, #a02525, #191a1a);
-  color: #ccc;
   font-family: "Trebuchet MS";
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: #ccc;
 }
 
 .container {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
 }
 
-img {
+.profile img {
   width: 150px;
   height: 150px;
-  margin-top: 50px;
   border-radius: 50%;
   object-fit: cover;
   animation: bounce 2s infinite;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  margin-top: 8px;
+.profile h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.profile h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .button-container {
   width: 100%;
-  padding: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .custom-btn {
   --background: #ccc;
   --color: #191a1a;
-  --border-radius: 10px;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
   font-size: 20px;
-  width: 65vw;
-  margin: 10px auto;
+  border-radius: 10px;
+  width: 40vw;
   padding: 10px;
-
   text-decoration: none;
-  transition: transform 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 
-  display: block;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-.custom-btn:hover {
-  transform: scale(1.05);
+@keyframes bounce {
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
 }
