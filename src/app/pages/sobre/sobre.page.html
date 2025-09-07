@@ -1,13 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>sobre</ion-title>
+    <ion-title> Sobre</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">sobre</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <div class="card">
+      <h1>Sobre o Desenvolvedor</h1>
+      <p>
+        Sou Matheus Teixeira Pimentel, estudante de Análise e Desenvolvimento de
+        Sistemas na Universidade Augusto Motta (UNISUAM), com previsão de
+        conclusão em julho de 2026. Tenho 25 anos, sou brasileiro e resido no
+        Rio de Janeiro. Meu objetivo é atuar como Desenvolvedor de Software
+        Júnior, aplicando e expandindo meus conhecimentos em Front-End, Back-End
+        e soluções em nuvem.
+      </p>
+      <p>
+        Possuo experiência acadêmica em projetos que envolvem React.js,
+        TypeScript, Node.js, PHP, MySQL, MongoDB, PostgreSQL e AWS, além de
+        cursos complementares em desenvolvimento web e fundamentos de cloud
+        computing. Destaco-me pela paixão por tecnologia, facilidade de
+        aprendizado, comprometimento com inovação e capacidade de colaborar em
+        equipe.
+      </p>
+      <p>
+        Busco uma oportunidade para integrar uma equipe dinâmica, onde possa
+        contribuir com minhas habilidades técnicas e, ao mesmo tempo, evoluir
+        como profissional na área de desenvolvimento de software.
+      </p>
+    </div>
+
+    <div class="links">
+      <a
+        href="https://www.linkedin.com/in/matheus-teixeira-3750b51b3/"
+        target="_blank"
+      >
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Matheuscrf" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.instagram.com/theusteixeiraa/" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <div class="button-container">
+      <ion-button expand="block" class="custom-btn" routerLink="/home">
+        Voltar
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
